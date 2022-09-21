@@ -5,3 +5,7 @@ console.log(typeof undefined);
 console.log(typeof null); // corner case 
 console.log(typeof {"sanket": 12});
 console.log(typeof NaN);
+
+// my experiments : -
+
+console.log(typeof(typeof(22))); // gives error
