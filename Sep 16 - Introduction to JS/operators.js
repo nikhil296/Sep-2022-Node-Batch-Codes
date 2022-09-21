@@ -28,21 +28,23 @@ console.log(4 && 0); // 0
 console.log(4 || 0); // 4
 console.log(0 && 4); // 0
 console.log(0 || 4); // 4
-console.log(-4 || 5); // -4
+console.log(-4 || 5); // -4 cuz -4 is considered True.
 console.log(3 && 4); // 4
 console.log(3 || 4); // 3
-console.log(-0 && 9); // -0
+console.log(-0 && 9); // -0 bcz (0, -0) are considered False
 
 // my experiments :-
 // && :- This always keeps checking until the true values are there and returns the 
 //         last true value or the first false value.
-// || :- This always 
+// || :- This always until first true value is encountered and returns that value.
+//          or if no true value found then the last False value encountered is returned.
 console.log(4 && 5 && 6); // 6
 console.log(4 || 5 || 6); // 4
 console.log(4 && 5 || 6); // 5
 console.log(4 && 5 && -6 && 7); // 7
 console.log(0 && -0); // 0
 console.log(-0 && 0); // -0
+console.log(0 || -0) // -0
 console.log(-0 && 1 && 2); //-0
 console.log(-0 || 1); // 1
 console.log(-5 && 6); // 6
